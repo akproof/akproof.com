@@ -6,10 +6,10 @@ body {background:#f7f7f7;font-family:'Roboto Condensed',sans-serif;margin:20 aut
 #header img{vertical-align:middle;padding-right:32px}
 #header span{font-size:32px}
 
-a:link {text-decoration:none; color:#333}
-a:visited {text-decoration:none; color:#333}
-a:hover {text-decoration:none; color:#333}
-a:active {text-decoration:none; color:#333}
+a:link {text-decoration:none; color:#abc}
+a:visited {text-decoration:none; color:#abc}
+a:hover {text-decoration:none; color:#abc}
+a:active {text-decoration:none; color:#abc}
 
 ul.botnav {
 	max-width: 768px;
