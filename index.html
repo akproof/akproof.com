@@ -1,41 +1,807 @@
-<!doctype html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if IE 9 ]><html class="ie9 no-js"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!-->
-<html class="no-js">
-<!--<![endif]-->
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<title>Atomic Knowledge Proof (AKP)</title>
-	<meta property="og:title" content="Atomic Knowledge Proof (AKP)" />
-	<meta property="og:description" content="AKPROOF aka AKP aka Atomic Knowledge Proof offers PaaS, SaaS, and custom-built solutions for public and private sector clients that want to leverage the value and benefits of an enterprise-grade, globally-compliant foundational digital infrastructure technology stack for digital economies and societies."/>
-	<meta property="og:image" content="https://akproof.com/apple-touch-icon.png"/>
-	<link rel="stylesheet" href="css/css.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
-	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-	<meta name="msapplication-TileColor" content="#da532c">
-	<meta name="theme-color" content="#ffffff">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>AKP: Atomic Knowledge Proof</title>
+  <meta name="description" content="AKP (Atomic Knowledge Proof) is a web3 development and consultancy group that specializes in legal and compliant applications of blockchain and cryptography">
+  <meta name="keywords" content="web3, blockchain, cryptography">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AKP: Atomic Knowledge Proof">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://akproof.com">
+  <meta property="og:image" content="https://akproof.com/assets/favicon/apple-touch-icon.png">
+  <meta property="og:description" content="AKP (Atomic Knowledge Proof) is a web3 development and consultancy group that specializes in legal and compliant applications of blockchain and cryptography">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
+  <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Variables CSS Files. Uncomment your preferred color scheme -->
+  <link href="assets/css/variables.css" rel="stylesheet">
+  <!-- <link href="assets/css/variables-blue.css" rel="stylesheet"> -->
+  <!-- <link href="assets/css/variables-green.css" rel="stylesheet"> -->
+  <!-- <link href="assets/css/variables-orange.css" rel="stylesheet"> -->
+  <!-- <link href="assets/css/variables-purple.css" rel="stylesheet"> -->
+  <!-- <link href="assets/css/variables-red.css" rel="stylesheet"> -->
+  <!-- <link href="assets/css/variables-pink.css" rel="stylesheet"> -->
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
 </head>
 
 <body>
-	<div class="container">
-		<img id="c" src="img/akproof-black.png">
-		<h1 id="akp">ATOMIC KNOWLEDGE PROOF</h1>
-		<ul class="botnav">
-			<li><a href="about.html">About AKP</a></li>
-			<li><a href="offerings.html">Offerings</a></li>
-			<li><a href="education.html">Education</a></li>
-			<li><a href="careers.html">Careers</a></li>
-			<li class="right"><a href="contact.html">Contact</a></li>
-		</ul>
-	</div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top" data-scrollto-offset="0">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>AKP<span>.</span></h1>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+
+          <li class="dropdown"><a href="index.html#about"><span>About</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="index.html#about">About AKP</a></li>
+              <li><a href="about-overview.html">What do we do</a></li>
+              <li><a href="about-history.html">Where we are from</a></li>
+            </ul>
+          </li>
+
+          <li><a class="nav-link scrollto" href="index.html#products">Products</a></li>
+          <!--
+          <li class="dropdown"><a href="index.html#products"><span>Product</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="akp-products/web3-learning-lab.html">Web3 Learning Lab</a></li>
+              <li><a href="akp-products/web3-meta-logbook.html">Web3 Meta-Logbook</a></li>
+              <li><a href="akp-products/web3-meta-roster.html">Web3 Meta-Roster</a></li>
+              <li><a href="akp-products/web3-meta-wallet.html">Web3 Meta-Wallet</a></li>
+              <li><a href="akp-products/web3-mice-admin.html">Web3 MICE Admin</a></li>
+              <li><a href="akp-products/web3-school-admin.html">Web3 School Admin</a></li>
+            </ul>
+          </li>
+          -->
+
+          <li><a class="nav-link scrollto" href="index.html#services">Services</a></li>
+          <!--
+          <li class="dropdown"><a href="index.html#services"><span>Services</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li class="dropdown"><a href="akp-services-education.html">Web3 Education</a>
+                <ul>
+                  <li><a href="akp-services-education.html#2tier">Secondary Schools</a></li>
+                  <li><a href="akp-services-education.html#3tier">Colleges and Universities</a></li>
+                  <li><a href="akp-services-education.html#coaching">Coaching and Mentorship</a></li>
+                  <li><a href="akp-services-education.html#cpd">Continuous Professional Development</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="akp-services-consulting.html">Web3 Consultancy</a>
+                <ul>
+                  <li><a href="akp-services-consulting.html#aec">Architecture, Construction, Engineering</a></li>
+                  <li><a href="akp-services-consulting.html#edu">Education, Training, Human Resources</a></li>
+                  <li><a href="akp-services-consulting.html#esg">Environmental, Sustainability, Governance</a></li>
+                  <li><a href="akp-services-consulting.html#fin">Finance, Banking, Insurance, Property</a></li>
+                  <li><a href="akp-services-consulting.html#gov">Government and Public Services</a></li>
+                  <li><a href="akp-services-consulting.html#com">Retail and E-Commerce</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="akp-services-solutions.html">Web3 Solution Design</a>
+                <ul>
+                  <li><a href="akp-services-solutions.html#cde">Common Data Environment</a></li>
+                  <li><a href="akp-services-solutions.html#did">Digital Identity and Credentials</a></li>
+                  <li><a href="akp-services-solutions.html#gov">Enterprise Governance</a></li>
+                </ul>
+              </li>
+              <li><a href="akp-services-development.html">Web3 App Development</a></li>
+              <li><a href="akp-services-devops.html">Web3 Development Operations</a></li>
+              <li class="dropdown"><a href="akp-services-infrastructure.html">Web3 Infrastructure Services</a>
+                <ul>
+                  <li><a href="akp-services-infrastructure.html#eth">Ethereum / Quorum</a></li>
+                  <li><a href="akp-services-infrastructure.html#hlf">Hyperledger Fabric</a></li>
+                  <li><a href="akp-services-infrastructure.html#r3c">R3 Corda</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          -->
+          <li><a class="nav-link scrollto" href="careers.html">Careers</a></li>
+          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle d-none"></i>
+      </nav><!-- .navbar -->
+
+      <a class="btn-getstarted scrollto" href="index.html#contact">Get Started</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <section id="hero-animated" class="hero-animated d-flex align-items-center">
+    <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative" data-aos="zoom-out">
+      <img src="assets/img/hero-carousel/hero-carousel-3.svg" class="img-fluid animated">
+      <h2>Atomic Knowledge <span>Proof</span></h2>
+      <p>Building a better web from first principles in trust and privacy</p>
+      <div class="d-flex">
+        <a href="#about" class="btn-get-started scrollto">Get Informed</a>
+        <a href="careers.html" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-person-plus"></i><span>Get Involved</span></a>
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <!-- ======= Featured Services Section ======= -->
+    <section id="featured-services" class="featured-services">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-check-circle icon"></i></div>
+              <h4><a href="" class="stretched-link">Trust but verify</a></h4>
+              <p>Cryptographically prove and verify data from a variety of sources with minimal integration</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-key icon"></i></div>
+              <h4><a href="" class="stretched-link">Self-Sovereignty</a></h4>
+              <p>Let your users exercise control over their digital identity, data, assets, and enable consent-based interactions</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-link icon"></i></div>
+              <h4><a href="" class="stretched-link">Bridging Boundaries</a></h4>
+              <p>Transact with clients and partners through verifiable and private inter-organizational networks</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-briefcase icon"></i></div>
+              <h4><a href="" class="stretched-link">Portable Reputation</a></h4>
+              <p>Build new root of trust with compliant governance that spans a spectrum of decentralized setup</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Featured Services Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>About Us</h2>
+          <p>Named after the <i>atomic processes</i> of trust frameworks, AKP is contributes to the evolution of the world wide web that <i>facilitates digital human trust</i> through legal and regulated application of blockchain and cryptography. <br><br>This is our framework of building a solution from inception to completion:</p> 
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+      <div class="container" data-aos="fade-up">
+
+        <ul class="nav nav-tabs row gy-4 d-flex">
+
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
+              <i class="bi bi-binoculars color-cyan"></i>
+              <h4>1. Learn</h4>
+            </a>
+          </li><!-- End Tab 1 Nav -->
+
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
+              <i class="bi bi-box-seam color-indigo"></i>
+              <h4>2. Explore</h4>
+            </a>
+          </li><!-- End Tab 2 Nav -->
+
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
+              <i class="bi bi-brightness-high color-teal"></i>
+              <h4>3. Design</h4>
+            </a>
+          </li><!-- End Tab 3 Nav -->
+
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
+              <i class="bi bi-command color-red"></i>
+              <h4>4. Prototype</h4>
+            </a>
+          </li><!-- End Tab 4 Nav -->
+
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-5">
+              <i class="bi bi-easel color-blue"></i>
+              <h4>5. Pilot</h4>
+            </a>
+          </li><!-- End Tab 5 Nav -->
+
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-6">
+              <i class="bi bi-rocket color-orange"></i>
+              <h4>6. Launch</h4>
+            </a>
+          </li><!-- End Tab 6 Nav -->
+
+        </ul>
+
+        <div class="tab-content">
+
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+                <h3>1. Learn</h3>
+                <p class="fst-italic">
+                  Learn about the infrastructure of regulated web3 applications.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check-circle-fill"></i> Why web3 applications are (not) legal or compliant.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> How web3 applications can co-exist with regulations.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> What web3 applications need for legal/regulatory compliance.</li>
+                </ul>
+              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/img/features-1.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content 1 -->
+
+          <div class="tab-pane" id="tab-2">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1">
+                <h3>2. Explore</h3>
+                <p class="fst-italic">
+                  Explore ideas and concepts of the solution with our experienced team of subject matter experts.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check-circle-fill"></i> Familiarize with other use cases in regulated web3 infrastructure.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Brainstorm use cases for your business or industry.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Iterate on your ideas and concepts.</li>
+                </ul>
+              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-2.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content 2 -->
+
+          <div class="tab-pane" id="tab-3">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1">
+                <h3>3. Design</h3>
+                <p class="fst-italic">
+                  Design the solution through collaborating with our experienced product engineering team.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check-circle-fill"></i> Identify core values, key benefits, potential impact.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Iterate on solution architecture and technical specifications.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Interview stakeholders and users to refine the design.</li>
+                </ul>
+              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-3.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content 3 -->
+
+          <div class="tab-pane" id="tab-4">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1">
+                <h3>4. Prototype</h3>
+                <p class="fst-italic">
+                  Prototype the solution through iterations of low- and high-fidelity mockups.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check-circle-fill"></i> Create wireframes for high concept validation.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Create pixel-perfect mockups for stakeholder feedback.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Create interactive prototype for user interaction testing.</li>
+                </ul>
+              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-4.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content 4 -->
+
+          <div class="tab-pane" id="tab-5">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1">
+                <h3>5. Pilot</h3>
+                <p class="fst-italic">
+                  Pilot the solution with a group of minimum viable stakeholders.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check-circle-fill"></i> Create testnet and sandbox.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Onboard initial nodes.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Test key scenarios.</li>
+                </ul>
+              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-5.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content 5 -->
+
+          <div class="tab-pane" id="tab-6">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1">
+                <h3>6. Launch</h3>
+                <p class="fst-italic">
+                  Launch the solution to increasingly larger networks of stakeholders.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check-circle-fill"></i> Create infrastructure governance and policy for net.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Onboard additional nodes and accounts.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Monitor and address issues and concerns.</li>
+                </ul>
+              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-6.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content 6 -->
+
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Products Section ======= -->
+    <section id="products" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Our Products</h2>
+          <p>AKP offers a plethora of products based on our long history of regulated web3 development.</p>
+        </div>
+
+        <div class="row gy-5">
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/web3-education.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-activity"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3>Web3 Education</h3>
+                </a>
+                <p>AKP offers courses, workshops, and mentorship programs to help students and professionals understand regulated web3.</p>
+              </div>
+            </div>
+          </div><!-- End Product Item -->
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/web3-consultancy.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-broadcast"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3>Web3 Consultancy</h3>
+                </a>
+                <p>AKP provides expert guidance on integrating existing/legacy systems with regulated web3 or building new ones.</p>
+              </div>
+            </div>
+          </div><!-- End Product Item -->
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/web3-design.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-easel"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3>Web3 Solution Design</h3>
+                </a>
+                <p>AKP helps organizations design and deliver regulated web3 solutions, including applications and governance.</p>
+              </div>
+            </div>
+          </div><!-- End Product Item -->
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/web3-app.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-bounding-box-circles"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3>Web3 App Development</h3>
+                </a>
+                <p>AKP specializes in building regulated web3 apps: full-stack web/mobile dev, chain-code, and integrations.</p>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+          </div><!-- End Product Item -->
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/web3-devops.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-calendar4-week"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3>Web3 Development Operations</h3>
+                </a>
+                <p>AKP provides support for deploying and maintaining regulated web3 solutions and applications.</p>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+          </div><!-- End Product Item -->
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="700">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/web3-infra.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-chat-square-text"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3>Web3 Infrastructure Services</h3>
+                </a>
+                <p>AKP offers services for hosting, storage, and networking to support regulated web3 solutions and apps.</p>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+          </div><!-- End Product Item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Products Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Our Services</h2>
+          <p>AKP offers services for those starting off their web3 journey to those looking for specific sets of skills.</p>
+        </div>
+
+        <div class="row gy-5">
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/web3-education.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-activity"></i>
+                </div>
+                <a href="akp-services-education.html" class="stretched-link">
+                  <h3>Web3 Education</h3>
+                </a>
+                <p>AKP offers courses, workshops, and mentorship programs to help students and professionals understand regulated web3.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/web3-consultancy.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-broadcast"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3>Web3 Consultancy</h3>
+                </a>
+                <p>AKP provides expert guidance on integrating existing/legacy systems with regulated web3 or building new ones.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/web3-design.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-easel"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3>Web3 Solution Design</h3>
+                </a>
+                <p>AKP helps organizations design and deliver regulated web3 solutions, including applications and governance.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/web3-app.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-bounding-box-circles"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3>Web3 App Development</h3>
+                </a>
+                <p>AKP specializes in building regulated web3 apps: full-stack web/mobile dev, chain-code, and integrations.</p>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/web3-devops.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-calendar4-week"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3>Web3 Development Operations</h3>
+                </a>
+                <p>AKP provides support for deploying and maintaining regulated web3 solutions and applications.</p>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="700">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/web3-infra.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-chat-square-text"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3>Web3 Infrastructure Services</h3>
+                </a>
+                <p>AKP offers services for hosting, storage, and networking to support regulated web3 solutions and apps.</p>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-header">
+          <h2>Contact Us</h2>
+          <p>Our multinational team is based out of the Hong Kong Science and Technology Park (HKSTP). If you are not located in Hong Kong, please reach out so we can put you in touch with someone in your geography or time zone.</p>
+        </div>
+
+      </div>
+
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14752.173946413115!2d114.208203!3d22.427389!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404094b52f9cebf%3A0x8da07fbe6b29a131!2sBuilding%2019W!5e0!3m2!1sen!2shk!4v1689061060564!5m2!1sen!2shk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div><!-- End Google Maps -->
+
+      <div class="container">
+
+        <div class="row gy-5 gx-lg-5">
+
+          <div class="col-lg-4">
+
+            <div class="info">
+              <h3>Get in touch</h3>
+              <p>We work with students and professionals (public and private sectors) to bring their web3 vision into reality.</p>
+
+              <div class="info-item d-flex">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h4>Location:</h4>
+                  <p>Unit 613, 19W Science Park, HKSAR</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h4>Email:</h4>
+                  <p>info@akproof.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex">
+                <i class="bi bi-file-earmark-arrow-down flex-shrink-0"></i>
+                <div>
+                  <h4>Fax:</h4>
+                  <p>+852 3586 9936</p>
+                </div>
+              </div><!-- End Info Item -->
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-content">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>AKP</h3>
+              <p>
+                Atomic Knowledge Proof<br>
+                Unit 613, 19W Science Park<br>
+                New Territories, HKSAR<br><br>
+                <strong>Fax:</strong> +852 3586 9936<br>
+                <strong>Email:</strong> info@akproof.com<br>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Products</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#products">Web3 Learning Lab</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#products">Web3 Meta-Logbook</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#products">Web3 Meta-Roster</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#products">Web3 Meta-Wallet</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#products">Web3 MICE Admin</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#products">Web3 School Admin</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Services</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#services">Web3 Education</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#services">Web3 Consultancy</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#services">Web3 Solution Design</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#services">Web3 App Development</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#services">Web3 Development Operations</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#services">Web3 Infrastructure Services</a></li>
+            </ul>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Subscribe to stay on top of trends in regulated web3</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal text-center">
+      <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+
+        <div class="d-flex flex-column align-items-center align-items-lg-start">
+          <div class="copyright">
+            &copy; 2019-2023 <strong><span>Atomic Knowledge Proof Limited</span></strong> (AKP). All Rights Reserved.
+          </div>
+        </div>
+
+        <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
